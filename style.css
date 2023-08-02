@@ -67,7 +67,9 @@ header {
 .main-body {
     margin: 0;
     padding: 7px;
-    width: 360px;
+    position: relative;
+    left: 50%;
+    margin-left: -165px;
 }
 
 .main-body__heading {
@@ -98,8 +100,7 @@ header {
 
 .main-body__price {
     position: relative;
-    left: 50%;
-    margin-left: -137.5px;
+    margin-left: 34px;
     width: 275px;
     height: 60px;
     margin-top: 50px;
@@ -139,6 +140,9 @@ header {
 
     .main-body {
         padding: 10px;
+        position: relative;
+        left: 50%;
+        margin-left: -375px;
     }
 
     .main-body__heading {
@@ -243,6 +247,8 @@ header {
 
     .main-body {
         padding-inline: 140px;
+        left: 50%;
+        margin-left: -740px;
     }
 
     .main-body__heading {
