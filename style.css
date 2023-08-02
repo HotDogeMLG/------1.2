@@ -11,6 +11,7 @@ body {
     line-height: normal;
     height: 100vh;
     background-color: white;
+    color: hsla(246, 49%, 27%, 1);
 }
 
 button {
@@ -21,10 +22,15 @@ button {
     cursor: pointer;
 }
 
+a {
+    text-decoration: none;
+}
+
 
 /*Header style*/
 
 header {
+    height: 62px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,6 +45,9 @@ header {
     margin-left: 10px;
 }
 
+.header__call h6 {
+    display: none;
+}
 .header__call {
     background-color: hsla(246, 93%, 66%, 1);
     border-radius: 5px;
@@ -58,7 +67,6 @@ header {
 .main-body {
     margin: 0;
     padding: 7px;
-    color: hsla(246, 49%, 27%, 1);
     width: 360px;
 }
 
@@ -112,8 +120,13 @@ header {
 }
 
 
-/*Adaptive styles*/
+/*Laptop style*/
+
 @media screen and (min-width: 768px) {
+    header {
+        height: 97px;
+    }
+
     .header__logo img {
         width: 177.613px;
         height: 55px;
@@ -129,16 +142,12 @@ header {
     }
 
     .main-body__heading {
-        box-sizing: content-box;
         background-image: url(images/computer__medium.png);
         background-size: 503px;
-        background-repeat: no-repeat;
         background-position: 250px -19px;
         font-size: 24px;
-        font-weight: 700;
         width: 750px;
         height: 378px;
-        margin-bottom: 0px;
     }
     
     .main-body__description {
@@ -161,5 +170,106 @@ header {
         width: 287px;
         position: relative;
         top: -354px;
+    }
+}
+
+
+/*Desktop style*/
+
+@media screen and (min-width: 1440px) {
+    header {
+        justify-content: flex-start;
+        height: 115px;
+    }
+
+    .header__logo {
+        order: -1;
+        margin-left: 140px
+    }
+    .header__logo img{
+        width: 182px;
+    }
+
+    .header__mobile-menu {
+        display: none;
+    }
+    .header__call img{
+        display: none;        
+    }
+    .header__call h6 {
+        display: inline;
+    }
+
+    .header__call {
+        width: 177px;
+        height: 60px;
+        margin-left: -50px;
+    }
+    .header__call h6 {
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+        font-weight: 800;
+    }
+
+    .header__phone-number {
+        display: inline-block;
+        text-align: right;
+        width: 290px;
+        font-size: 24px;
+        font-weight: 800;
+        margin-inline: 75px;
+    }
+    .phone .phone__calling-time {
+        position: relative;
+        top: -9px;
+        font-size: 12px;
+        font-weight: 700;
+    }
+    .phone a {
+        margin: 3px;
+    }
+
+    .header__menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 34px;
+        min-width: 400px;
+        font-size: 14px;
+        font-weight: 700;
+        color: hsla(246, 49%, 27%, 1);
+    }
+
+    .main-body {
+        padding-inline: 140px;
+    }
+
+    .main-body__heading {
+        background-image: url(images/computer__big.png);
+        background-size: 855px;
+        background-position: 425px -120px;
+        font-size: 36px;
+        width: 1200px;
+        height: 569px;
+    }
+
+    .heading__first-line::after {
+        content: "\A";
+        white-space: pre;
+    }
+
+    .main-body__description {
+        font-size: 16px;
+        top: -470px;
+        width: 619px;
+    }
+    .main-body__price {
+        top: -400px;
+    }
+    .main-body__advertisment {
+        top: -390px;
+        width: 472px;
+        font-size: 14px;
     }
 }
