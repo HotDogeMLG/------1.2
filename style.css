@@ -40,6 +40,7 @@ header {
     height: 32.5px;
     width: 52px;
     margin-right: 10px;
+    flex-shrink: 0;
 }
 
 .header__phone-number, .header__menu {
@@ -55,20 +56,25 @@ header {
     align-items: center;
     margin: 0;
     padding: 7px;
-    min-height: 360px;
     color: hsla(246, 49%, 27%, 1);
 }
 
 .main-body__heading {
     font-size: 18px;
     font-weight: 700;
+    width: 345px;
+    height: 290px;
+    margin-bottom: 0px;
+    padding: 10px;
 }
 .light-part {
     color: hsla(246, 93%, 66%, 1);
 }
 
 .main-body__image {
-    margin-top: -45px;
+    object-position: -6px -54px;
+    width: 345px;
+    overflow: visible;
 }
 
 .main-body__description {
