@@ -30,6 +30,11 @@ header {
     align-items: center;
 }
 
+.header__logo img {
+    width: 113px;
+    height: 35px;
+}
+
 .header__mobile-menu {
     margin-left: 10px;
 }
@@ -51,33 +56,30 @@ header {
 /*Main body*/
 
 .main-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     margin: 0;
     padding: 7px;
     color: hsla(246, 49%, 27%, 1);
+    width: 360px;
 }
 
 .main-body__heading {
+    box-sizing: content-box;
+    background-image: url(images/computer__small.png);
+    background-size: 330px;
+    background-repeat: no-repeat;
+    background-position: -3px -6px;
     font-size: 18px;
     font-weight: 700;
-    width: 345px;
+    width: 330px;
     height: 290px;
     margin-bottom: 0px;
-    padding: 10px;
 }
 .light-part {
     color: hsla(246, 93%, 66%, 1);
 }
 
-.main-body__image {
-    object-position: -6px -54px;
-    width: 345px;
-    overflow: visible;
-}
-
 .main-body__description {
+    width: 356px;
     margin-top: 29px;
     font-size: 12px;
     font-weight: 400;
@@ -87,7 +89,9 @@ header {
 }
 
 .main-body__price {
-    flex-shrink: 0;
+    position: relative;
+    left: 50%;
+    margin-left: -137.5px;
     width: 275px;
     height: 60px;
     margin-top: 50px;
@@ -99,9 +103,63 @@ header {
 }
 
 .main-body__advertisment {
+    width: 340px;
     margin-top: 9px;
     font-size: 12px;
     font-weight: 500;
     text-align: center;
     line-height: 137,4%;
+}
+
+
+/*Adaptive styles*/
+@media screen and (min-width: 768px) {
+    .header__logo img {
+        width: 177.613px;
+        height: 55px;
+    }
+
+    .header__call {
+        width: 62px;
+        height: 38.75px;
+    }
+
+    .main-body {
+        padding: 10px;
+    }
+
+    .main-body__heading {
+        box-sizing: content-box;
+        background-image: url(images/computer__medium.png);
+        background-size: 503px;
+        background-repeat: no-repeat;
+        background-position: 250px -19px;
+        font-size: 24px;
+        font-weight: 700;
+        width: 750px;
+        height: 378px;
+        margin-bottom: 0px;
+    }
+    
+    .main-body__description {
+        width: 350px;
+        position: relative;
+        top: -358px;
+    }
+
+    .main-body__price {
+        position: relative;
+        left: 0;
+        margin-left: 0;
+        top: -354px;
+        
+    }
+
+    .main-body__advertisment {
+        text-align: left;
+        font-weight: 600;
+        width: 287px;
+        position: relative;
+        top: -354px;
+    }
 }
