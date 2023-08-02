@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    height: 100vh;
+    background-color: white;
+}
+
+button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+
+/*Header style*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__mobile-menu {
+    margin-left: 10px;
+}
+
+.header__call {
+    background-color: hsla(246, 93%, 66%, 1);
+    border-radius: 5px;
+    height: 32.5px;
+    width: 52px;
+    margin-right: 10px;
+}
+
+.header__phone-number, .header__menu {
+    display: none;
+}
+
+
+/*Main body*/
+
+.main-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 7px;
+    min-height: 360px;
+    color: hsla(246, 49%, 27%, 1);
+}
+
+.main-body__heading {
+    font-size: 18px;
+    font-weight: 700;
+}
+.light-part {
+    color: hsla(246, 93%, 66%, 1);
+}
+
+.main-body__image {
+    margin-top: -45px;
+}
+
+.main-body__description {
+    margin-top: 29px;
+    font-size: 12px;
+    font-weight: 400;
+}
+.description__light-part {
+    font-weight: 700;
+}
+
+.main-body__price {
+    flex-shrink: 0;
+    width: 275px;
+    height: 60px;
+    margin-top: 50px;
+    background-color: hsla(246, 93%, 66%, 1);
+    border-radius: 5px;
+    color: white;
+    font-weight: 800;
+    font-size: 12px;
+}
+
+.main-body__advertisment {
+    margin-top: 9px;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 137,4%;
+}
