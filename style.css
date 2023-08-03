@@ -67,8 +67,6 @@ header {
 .main-body {
     margin: 0;
     padding: 7px;
-    position: relative;
-    min-width: 360px;
     display: flex;
     flex-direction: column;
     align-items: center ;
@@ -93,6 +91,7 @@ header {
     margin-top: 29px;
     font-size: 12px;
     font-weight: 400;
+    margin-inline: calc(4% - 12px);
 }
 .description__light-part {
     font-weight: 700;
@@ -144,15 +143,16 @@ header {
     .main-body__heading {
         background-image: url(images/computer__medium.png);
         background-size: 503px;
-        background-position: 99% -19px;
+        background-position: calc(90% + 42px) -19px;
         font-size: 24px;
         width: 99%;
         height: 378px;
         position: relative;
-        right: -5px;
+        right: -2%;
     }
     
     .main-body__description {
+        margin-inline: 1.5%;
         width: 47%;
         position: relative;
         top: -358px;
@@ -160,12 +160,14 @@ header {
     }
 
     .main-body__price {
+        margin-inline: 1.5%;
         position: relative;
         left: 7px;
         top: -354px;
     }
 
     .main-body__advertisment {
+        margin-inline: 1.5%;
         text-align: left;
         font-weight: 600;
         width: 40%;
@@ -247,23 +249,15 @@ header {
         padding-inline: 140px;
     }
 
-    /*background-image: url(images/computer__medium.png);
-    background-size: 503px;
-    background-position: 99% -19px;
-    font-size: 24px;
-    width: 99%;
-    height: 378px;
-    position: relative;
-    right: -5px;*/
     .main-body__heading {
         padding-top: 40px;
         background-image: url(images/computer__big.png);
         background-size: 855px;
-        background-position: calc(99% + 110px) -70px;
+        background-position: calc(80% + 200px) -70px;
         font-size: 36px;
         width: 99%;
         height: 599px;
-        align-self: flex-end;
+        right: -5px;
     }
     .heading__first-line::after {
         content: "\A";
@@ -271,14 +265,17 @@ header {
     }
 
     .main-body__description {
+        margin-inline: 0;
         font-size: 16px;
         top: -470px;
         width: 58%;
     }
     .main-body__price {
+        margin-inline: 0;
         top: -400px;
     }
     .main-body__advertisment {
+        margin-inline: 0;
         top: -390px;
         width: 45%;
         font-size: 14px;
