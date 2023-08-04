@@ -45,7 +45,7 @@ header {
     margin-left: 10px;
 }
 
-.header__call h6 {
+.header__call span {
     display: none;
 }
 .header__call {
@@ -74,13 +74,14 @@ header {
 
 .main-body__heading {
     box-sizing: content-box;
-    background-image: url(images/computer__small.png);
-    background-size: 330px;
+    background-image: url(images/computer__medium.png);
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: -3px -6px;
     font-size: 18px;
     font-weight: 700;
-    height: 290px;
+    height: 70vw;
+    max-height: 350px;
     margin-bottom: 0px;
 }
 .light-part {
@@ -141,29 +142,30 @@ header {
     }
 
     .main-body__heading {
-        background-image: url(images/computer__medium.png);
-        background-size: 503px;
-        background-position: calc(90% + 42px) -19px;
+        background-image: url(images/computer__big.png);
+        background-size: calc(50% + 100px);
+        background-position: calc(90% + 42px) calc(+40px - 7vw);
         font-size: 24px;
         width: 99%;
-        height: 378px;
-        position: relative;
+        height: 40vw;
+        position: absolute;
         right: -2%;
+        max-height: 700px;
     }
     
     .main-body__description {
         margin-inline: 1.5%;
         width: 47%;
-        position: relative;
-        top: -358px;
-        left: 7px;
+        position: absolute;
+        top: 8vw;
+        left: 17px;
     }
 
     .main-body__price {
         margin-inline: 1.5%;
-        position: relative;
-        left: 7px;
-        top: -354px;
+        position: absolute;
+        left: 17px;
+        top: 20vw;
     }
 
     .main-body__advertisment {
@@ -171,9 +173,9 @@ header {
         text-align: left;
         font-weight: 600;
         width: 40%;
-        position: relative;
-        top: -340px;
-        left: 7px;
+        position: absolute;
+        top: calc(20vw + 120px);
+        left: 17px;
     }
 }
 
@@ -230,7 +232,7 @@ header {
     .header__call img{
         display: none;        
     }
-    .header__call h6 {
+    .header__call span {
         display: inline;
     }
     .header__call {
@@ -238,8 +240,6 @@ header {
         height: 60px;
         margin-left: -50px;
         margin-right: 140px;
-    }
-    .header__call h6 {
         color: white;
         font-size: 12px;
         font-weight: 800;
@@ -252,12 +252,13 @@ header {
     .main-body__heading {
         padding-top: 40px;
         background-image: url(images/computer__big.png);
-        background-size: 855px;
-        background-position: calc(80% + 200px) -70px;
+        background-size: 50%;
+        background-position: calc(65% + 100px) -70px;
         font-size: 36px;
         width: 99%;
-        height: 599px;
-        right: -5px;
+        height: 40vw;
+        left: 140px;
+        max-height: 40vw;
     }
     .heading__first-line::after {
         content: "\A";
@@ -265,19 +266,23 @@ header {
     }
 
     .main-body__description {
+        max-width: 900px;
         margin-inline: 0;
         font-size: 16px;
-        top: -470px;
-        width: 58%;
+        top: 11vw;
+        left: 140px;
+        width: 42%;
     }
     .main-body__price {
         margin-inline: 0;
-        top: -400px;
+        top: 19vw;
+        left: 140px;
     }
     .main-body__advertisment {
         margin-inline: 0;
-        top: -390px;
-        width: 45%;
+        top: calc(19vw + 125px);
+        left: 140px;
+        width: 41%;
         font-size: 14px;
     }
 }
