@@ -15,15 +15,24 @@
 <body>
     <header class="header">
         <button class="header__mobile-menu" id="menu-button" onclick="menuButtonFunction()">
-            <span></span><span></span><span></span>
+            <span class="header__menu-span"></span>
+            <span class="header__menu-span"></span>
+            <span class="header__menu-span"></span>
         </button>
-        <nav class="header__menu">
+        <nav class="header__menu menu">
             <a href=""> Главная </a>
             <a href=""> Цены </a>
             <a href=""> Кейсы и отзывы </a>
             <a href=""> Контакты </a>
+            <div class="header__dim" onclick="menuButtonFunction()"></div>
+            <section class="menu__info_mobile">
+                <div>info@millenium.ru</div>
+                <div>+7 (495) 792-66-69 <br> пн-пт 10:00-19:00</div>
+            </section>
         </nav>
-        <div class="header__logo"> <img src="images/logo.svg" alt="Millenium"> </div>
+        <div class="header__logo">
+            <a href="index.html"> <img src="images/logo.svg" alt="Millenium"> </a>
+        </div>
         <section class="header__phone-number phone">
             <span>
                 <a href=""> <img src="images/telegram.svg" alt="link to telegram"> </a>
