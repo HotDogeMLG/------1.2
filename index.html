@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="style.css">
     <script src="main.js"></script>
 
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -64,7 +68,7 @@
                 выделит вас на фоне конкурентов
             </span>
         </article>
-        <button class="main-body__price"> Узнать стоимость </button>
+        <button class="price"> Узнать стоимость </button>
         <article class="main-body__advertisment">
             <span class="light-part">
                 Оставьте заявку и получите бесплатную консультацию от специалиста, полный
@@ -73,6 +77,93 @@
             "15 сервисов, которые покажут стратегию продвижения конкурентов, 
             всё об их выдаче в поиске и не только"
         </article>
-    </main> 
+        
+        <section class="main-body__advantages adv">
+            <span class="adv__header">
+                Мы создаем Интернет-магазины, <span class="light-part">которые продают</span>
+            </span>
+
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <span class="swiper-slide__number">01</span>
+                        <h2 class="swiper-slide__heading">Удобный интерфейс</h2>
+                        <div class="swiper-slide__hr"></div>
+                        <p class="swiper-slide__info">
+                            Блоковая подача информации, удобные кнопки, карточки товаров, 
+                            понятное меню и легкая навигация по многостраничному сайту.
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <span class="swiper-slide__number">02</span>
+                        <h2 class="swiper-slide__heading">Продающая структура</h2>
+                        <div class="swiper-slide__hr"></div>
+                        <p class="swiper-slide__info">
+                            Делаем анализ вашей целевой аудитории и вашего предложения. 
+                            Опираясь на анализ прописываем продающуюу структуру сайта.
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <span class="swiper-slide__number">03</span>
+                        <h2 class="swiper-slide__heading">Адаптивность</h2>
+                        <div class="swiper-slide__hr"></div>
+                        <p class="swiper-slide__info">
+                            Сайт корректно отображается на различных устройствах, 
+                            элементы динамически подстраиваются под различные разрешения 
+                            экрана, что повышает конверсию сайта в покупку.
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <span class="swiper-slide__number">04</span>
+                        <h2 class="swiper-slide__heading">Уникальный дизайн</h2>
+                        <div class="swiper-slide__hr"></div>
+                        <p class="swiper-slide__info">
+                            Не пользуемся шаблонными решениями. Под каждый проект 
+                            разрабатывается индивидуальный дизайн который подчеркнет 
+                            имидж компании.
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <span class="swiper-slide__number">05</span>
+                        <h2 class="swiper-slide__heading">Защита и безопасность</h2>
+                        <div class="swiper-slide__hr"></div>
+                        <p class="swiper-slide__info">
+                            Подключаем HTPS протокол, защиту от DDOS атак, чтобы данные 
+                            клиентов были в безопасности.
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <span class="swiper-slide__number">06</span>
+                        <h2 class="swiper-slide__heading">SEO оптимизация</h2>
+                        <div class="swiper-slide__hr"></div>
+                        <p class="swiper-slide__info">
+                            Сайты соответствуют требованиям поисковой оптимизации, 
+                            они без труда покоряют топы поисковой выдачи Яндекс и Google.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="swiper-pagination"></div>
+            </div>
+            <button class="price"> Узнать стоимость </button>
+        </section>
+    </main>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            direction: 'horizontal',
+            loop: true,
+        
+            pagination: {
+            el: '.swiper-pagination',
+            clickable: true, 
+            },
+        
+            navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
 </body>
 </html>
