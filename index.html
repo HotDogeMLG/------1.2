@@ -17,6 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!--Header-->
     <header class="header">
         <button class="header__mobile-menu" id="menu-button" onclick="menuButtonFunction()">
             <span class="header__menu-span"></span>
@@ -56,6 +57,7 @@
         </button>
     </header>
 
+    <!--Main body-->
     <main class="main-body">
         <h1 class="heading main-body__heading">
             <span class="heading__first-line"> Разработка интернет-магазинов </span>
@@ -78,6 +80,7 @@
             всё об их выдаче в поиске и не только"
         </article>
         
+        <!--Advantages block-->
         <section class="main-body__advantages adv">
             <span class="adv__header">
                 Мы создаем Интернет-магазины, <span class="light-part">которые продают</span>
@@ -142,13 +145,75 @@
                         </p>
                     </div>
                 </div>
-                
                 <div class="swiper-pagination"></div>
             </div>
+            
+            <article class="main-body__advantages_laptop laptop-adv">
+                <div class="laptop-adv__item">
+                    <span class="laptop-adv__number">01</span>
+                    <h2 class="laptop-adv__heading">Удобный интерфейс</h2>
+                    <div class="laptop-adv__hr"></div>
+                    <p class="laptop-adv__info">
+                        Блоковая подача информации, удобные кнопки, карточки товаров, 
+                        понятное меню и легкая навигация по многостраничному сайту.
+                    </p>
+                </div>
+                <div class="laptop-adv__item">
+                    <span class="laptop-adv__number">02</span>
+                    <h2 class="laptop-adv__heading">Продающая структура</h2>
+                    <div class="laptop-adv__hr"></div>
+                    <p class="laptop-adv__info">
+                        Делаем анализ вашей целевой аудитории и вашего предложения. 
+                        Опираясь на анализ прописываем продающуюу структуру сайта.
+                    </p>
+                </div>
+                <div class="laptop-adv__item">
+                    <span class="laptop-adv__number">03</span>
+                    <h2 class="laptop-adv__heading">Адаптивность</h2>
+                    <div class="laptop-adv__hr"></div>
+                    <p class="laptop-adv__info">
+                        Сайт корректно отображается на различных устройствах, 
+                        элементы динамически подстраиваются под различные разрешения 
+                        экрана, что повышает конверсию сайта в покупку.
+                    </p>
+                </div>
+                <div class="laptop-adv__item">
+                    <span class="laptop-adv__number">04</span>
+                    <h2 class="laptop-adv__heading">Уникальный дизайн</h2>
+                    <div class="laptop-adv__hr"></div>
+                    <p class="laptop-adv__info">
+                        Не пользуемся шаблонными решениями. Под каждый проект 
+                        разрабатывается индивидуальный дизайн который подчеркнет 
+                        имидж компании.
+                    </p>
+                </div>
+                <div class="laptop-adv__item">
+                    <span class="laptop-adv__number">05</span>
+                    <h2 class="laptop-adv__heading">Защита и безопасность</h2>
+                    <div class="laptop-adv__hr"></div>
+                    <p class="laptop-adv__info">
+                        Подключаем HTPS протокол, защиту от DDOS атак, чтобы данные 
+                        клиентов были в безопасности.
+                    </p>
+                </div>
+                <div class="laptop-adv__item">
+                    <span class="laptop-adv__number">06</span>
+                    <h2 class="laptop-adv__heading">SEO оптимизация</h2>
+                    <div class="laptop-adv__hr"></div>
+                    <p class="laptop-adv__info">
+                        Сайты соответствуют требованиям поисковой оптимизации, 
+                        они без труда покоряют топы поисковой выдачи Яндекс и Google.
+                    </p>
+                </div>
+            </article>
+            <button class="adv__arrow" onclick="advArrowFunction()" alt="Развернуть">
+                <img src="images/arrow.svg">
+            </button>
             <button class="price"> Узнать стоимость </button>
         </section>
     </main>
 
+    <!--Script for swiper-->
     <script>
         const swiper = new Swiper('.swiper', {
             direction: 'horizontal',
@@ -156,12 +221,7 @@
         
             pagination: {
             el: '.swiper-pagination',
-            clickable: true, 
-            },
-        
-            navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            clickable: true,
             },
         });
     </script>
